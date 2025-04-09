@@ -2,11 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прогресс-бар</title>
+  <style>
+    #progressWrapper {
+      width: 100%;
+      background-color: #ccc;
+      height: 30px;
+      margin-top: 20px;
+    }
+    #progressBar {
+      width: 0%;
+      background-color: #4caf50;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
-    
-    <script src="app.js">
-    </script>
+
+  <button id="startButton">Начать загрузку</button>
+  <div id="progressWrapper">
+    <div id="progressBar"></div>
+  </div>
+  <p id="statusText">Прогресс: 0%</p>
+  <script src="app.js"></script>
+
 </body>
 </html>
